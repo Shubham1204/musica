@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json" />
+    <script src="songs.js"></script>
+    <script src="model.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    
+        <header class="mb-5">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Music App</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blogs</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conatct.html">Contact Us</a>
+                      </li>
+                  </ul>
+                 
+                </div>
+              </nav>
+            
+
+        </header>
+    <!-- <div data-include="header.html"></div> -->
+        <!-- <iframe src="header.html"></iframe> -->
+        <div class="container">
+        <div id="player">
+            <audio id="audio" controls>
+                <source src="">
+            </audio>
+        </div>
+
+        <div id="content">
+            <div class="row">
+                <div class="col-md-8">
+                    <main id="main">
+                        <h2>Featured Songs</h2>
+                        <hr>
+                        <ul id="songList">
+
+                        </ul>
+                    </main>
+                </div>
+                <div class="col-md-4">
+                    <aside id="sidebar">
+                        <h2>My Playlist</h2>
+                        <button id="save" class="btn btn-warning btn_1">Save Playlist</button>
+                        <button id="load" class="btn btn-warning btn_1">Load Playlist</button>
+                        <hr>
+                        <ul id="playList">
+
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
